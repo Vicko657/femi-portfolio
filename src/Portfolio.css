@@ -1,0 +1,65 @@
+.portfolio-bg {
+  background-color: black;
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+.portfolio-bg h2 {
+  font-size: 48px;
+  padding: 50px 0 0 0;
+  margin: 0;
+  color: white;
+}
+
+button {
+  border: none;
+}
+button:focus {
+  border: none;
+  outline: none;
+}
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.portfolio-bg p {
+  font-size: 16px;
+  margin-left: 30px !important;
+  margin-right: 30px !important;
+  color: white;
+  opacity: 0.5;
+}
+.portfolio-jbl button {
+  background-image: url("/imgs/femi_jbl.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.portfolio-boarders button {
+  background-image: url("/imgs/femi_boarders.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.portfolio-plt button {
+  background-image: url("/imgs/femi_plt.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.portfolio-minor button {
+  background-image: url("/imgs/femi_minor.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.portfolio-worst button {
+  background-image: url("/imgs/femi_worst.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.accordion-item {
+  border: none;
+  padding: 0 !important;
+}
+h2 .accordion-header {
+  padding: 0 !important;
+  margin: 0 !important;
+}

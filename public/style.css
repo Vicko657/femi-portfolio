@@ -1,0 +1,41 @@
+body {
+  font-family: "proxima-nova", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-size: 170px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: -10px;
+  color: white;
+  padding-bottom: 0;
+}
+
+h2 {
+  margin: 0px !important;
+  padding: 0px !important;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  margin: 0px !important;
+}
+
+.card {
+  border: none !important;
+  border-radius: 0 !important;
+}
