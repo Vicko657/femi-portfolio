@@ -34,3 +34,19 @@
   justify-content: center;
   z-index: 10;
 }
+
+@media (max-width: 600px) {
+  .title {
+    margin-left: 5px;
+    margin-top: 10px;
+  }
+  .title p {
+    padding-left: 10px !important;
+  }
+  .bg-img {
+    width: 50%;
+  }
+  .card-body {
+    padding: 0;
+  }
+}

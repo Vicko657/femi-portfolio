@@ -39,3 +39,14 @@ p {
   border: none !important;
   border-radius: 0 !important;
 }
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 120px;
+    letter-spacing: -2px;
+    line-height: 0.85;
+  }
+  h3 {
+    font-size: 13px;
+  }
+}

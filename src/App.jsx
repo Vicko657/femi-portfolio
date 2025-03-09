@@ -8,7 +8,7 @@ import About from "./About";
 export default function App() {
   const [active, setActive] = useState(0);
   return (
-    <MegaScroll class="container-fluid" onChange={setActive}>
+    <MegaScroll className="container-fluid" onChange={setActive}>
       <div>
         <Header />
       </div>
@@ -18,9 +18,9 @@ export default function App() {
       <div>
         <Portfolio />
       </div>
-      <div style={{ background: "#333" }}>Keyboard Support</div>
-      <div style={{ background: "#222" }}>State Listeners</div>
-      <div style={{ background: "#111" }}>Free Forever</div>
+      <div style={{ background: "#333" }}></div>
+      <div style={{ background: "#222" }}></div>
+      <div style={{ background: "#111" }}></div>
     </MegaScroll>
   );
 }

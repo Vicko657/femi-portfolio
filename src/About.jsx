@@ -3,9 +3,9 @@ import "./About.css";
 
 export default function About() {
   return (
-    <div className="card about-bg h-100 d-flex flex-row">
-      <div className="card-body d-flex rows">
-        <div className="col-5 p-5">
+    <div className="card about-bg h-100 rows">
+      <div className="card-body  d-flex row">
+        <div className="col-lg-5 col-12 p-lg-5">
           <h2>Who am I?</h2>
           <p>
             I am an award-winning Producer and Production Manager with a proven
@@ -18,11 +18,11 @@ export default function About() {
             precision and creativity
           </p>
         </div>
-        <div className="col-7 p-5">
-          <div></div>
-          <div>
-            <img className="img-fluid" src="./imgs/femi_about.png" />
-          </div>
+        <div className="col-lg-7 d-lg-block d-none p-lg-5">
+          <img className="img-fluid" src="./imgs/femi_about.png" />
+        </div>
+        <div className="d-block d-lg-none col-12 p-5">
+          <img className="img-fluid" src="./imgs/femi_about.png" />
         </div>
       </div>
     </div>
