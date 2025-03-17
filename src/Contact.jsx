@@ -19,7 +19,7 @@ export default function Contact() {
         <div className="col-lg-7 d-lg-block d-none p-lg-5">
           <img className="img-fluid" src="./imgs/femi_contact.png" />
         </div>
-        <div className="d-block d-lg-none col-12 p-5">
+        <div className="d-block d-lg-none col-12">
           <img className="img-fluid" src="./imgs/femi_contact.png" />
         </div>
       </div>
