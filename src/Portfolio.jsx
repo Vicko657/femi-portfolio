@@ -470,7 +470,7 @@ export default function Portfolio() {
                 openAccordion === "minor" ? "show" : ""
               }`}
             >
-              <div className="accordion-body vh-100 d-flex rows overflow-auto">
+              <div className="accordion-body vh-100 d-flex rows ">
                 <div className="row">
                   <div className="col-lg-3 col-12 p-lg-5 pb-0 pt-3 p-5 ">
                     <p className="portfolio-role">Client</p>
@@ -478,7 +478,7 @@ export default function Portfolio() {
                     <p className="portfolio-role"> Role</p>
                     <h2 className="text-black mb-3">PRODUCTION MANAGER</h2>
                   </div>
-                  <div className="col-lg-5 col-12 p-lg-5 pt-0 p-5">
+                  <div className="col-lg-5 col-12 p-lg-5 pt-0 p-5 overflow-auto">
                     <h2 className="portfolio-main text-black mb-4">
                       As Production Manager for Channel 4.0's audacious series,
                       "Minor Issues," I orchestrated the seamless production of
@@ -506,6 +506,9 @@ export default function Portfolio() {
                       attention, with individual episodes achieving impressive
                       view counts. For instance, the episode "Savage Kids RATE
                       Rappers!" has amassed over 5.1 million views on YouTube.
+                    </p>
+
+                    <p className="portfolio-text mb-4">
                       This success underscores the show's appeal and its
                       innovative approach to celebrity commentary. By blending
                       authenticity with entertainment, "Minor Issues" has carved
@@ -564,7 +567,7 @@ export default function Portfolio() {
                 openAccordion === "worst" ? "show" : ""
               }`}
             >
-              <div className="accordion-body vh-100 d-flex rows overflow-auto">
+              <div className="accordion-body vh-100 d-flex rows ">
                 <div className="row">
                   <div className="col-lg-3 col-12 p-lg-5 pb-0 pt-3 p-5 ">
                     <p className="portfolio-role">Client</p>
@@ -572,7 +575,7 @@ export default function Portfolio() {
                     <p className="portfolio-role"> Role</p>
                     <h2 className="text-black mb-3">PRODUCTION CO-ORDINATOR</h2>
                   </div>
-                  <div className="col-lg-5 col-12 p-lg-5 pt-0 p-5 ">
+                  <div className="col-lg-5 col-12 p-lg-5 pt-0 p-5 overflow-auto">
                     <h2 className="portfolio-main text-black mb-4">
                       As Production Manager for Channel 4.0's dynamic series,
                       "Harry Pinero's Worst In Class," I played a pivotal role
@@ -601,12 +604,14 @@ export default function Portfolio() {
                       reflected in its impressive viewership. The show has
                       amassed over 2.5 Million views across YouTube y The show's
                       popularity has led to multiple seasons, with the latest
-                      episodes continuing to attract significant attention. By
-                      combining humor with an unconventional classroom setting,
-                      "Harry Pinero's Worst In Class" has carved out a unique
-                      niche in digital entertainment, resonating with a diverse
-                      audience and contributing to Channel 4.0's innovative
-                      content lineup.
+                      episodes continuing to attract significant attention.
+                    </p>
+                    <p className="portfolio-text mb-4">
+                      By combining humor with an unconventional classroom
+                      setting, "Harry Pinero's Worst In Class" has carved out a
+                      unique niche in digital entertainment, resonating with a
+                      diverse audience and contributing to Channel 4.0's
+                      innovative content lineup.
                     </p>
                   </div>
                   <div className="col-4 p-5 d-lg-block d-none">
