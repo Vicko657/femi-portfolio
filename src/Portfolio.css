@@ -6,14 +6,30 @@
 }
 
 .accordion h2 {
-  font-size: 48px;
+  font-size: 20px;
   padding: 50px 0 0 0;
   margin: 0;
   color: white;
+  line-height: 1;
 }
 
+.portfolio-text {
+  font-size: 15px;
+  line-height: 1;
+}
+.portfolio-role {
+  font-size: 15px;
+  line-height: 1;
+  opacity: 0.5;
+}
+
+.accordion-body {
+  padding: 70px;
+  line-height: 1;
+}
 button {
   border: none;
+  padding: 20px 105px !important;
 }
 button:focus {
   border: none;
@@ -24,7 +40,7 @@ button:focus {
 }
 
 .portfolio-summary {
-  font-size: 16px;
+  font-size: 14px;
   margin-top: 30px !important;
   color: white;
   opacity: 0.5;
@@ -61,6 +77,32 @@ button:focus {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.portfolio-gc button {
+  background-image: url("/imgs/femi_gc.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.portfolio-who button {
+  background-image: url("/imgs/femi_who.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.portfolio-mcplant button {
+  background-image: url("/imgs/femi_mcplant.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.portfolio-ndl button {
+  background-image: url("/imgs/femi_ndl.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.portfolio-parental button {
+  background-image: url("/imgs/femi_parental.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .accordion-item {
   border: none;
   padding: 0 !important;
@@ -69,11 +111,61 @@ h2 .accordion-header {
   padding: 0 !important;
   margin: 0 !important;
 }
+.accordion-button {
+  padding-left: 80px;
+  padding-right: 80px;
+}
 
+.portfolio-header h2 {
+  padding-left: 60px !important;
+}
+.portfolio-header p {
+  padding-left: 60px !important;
+}
+
+.accordion-button::after {
+  filter: brightness(0) invert(1);
+}
+
+.accordion-button:not(.collapsed)::after {
+  filter: brightness(0) invert(1);
+}
+
+.accordion-button {
+  color: white;
+}
+
+.accordion-button:not(.collapsed) {
+  color: white;
+}
 @media (max-width: 600px) {
   .accordion h2 {
     font-size: 16px;
-    padding: 50px 0 0 0;
+    padding: 50px 0 0 0px;
+  }
+  .accordion-body {
+    padding: 10px;
+  }
+  button {
+    border: none;
+    padding: 15px 45px !important;
+  }
+  .portfolio-main {
+    font-size: 18px !important;
+  }
+  .portfolio-text {
+    font-size: 13px;
+  }
+  .portfolio-header h2 {
+    padding-left: 0px !important;
+  }
+  .portfolio-header p {
+    padding-left: 0px !important;
+    padding-right: 50px !important;
+  }
+  .accordion-button {
+    padding-left: 50px;
+    padding-right: 50px;
   }
   .client {
     font-size: 14px;

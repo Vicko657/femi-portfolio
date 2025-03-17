@@ -4,6 +4,7 @@ import MegaScroll from "react-mega-scroll";
 import Header from "./Header";
 import Portfolio from "./Portfolio";
 import About from "./About";
+import Contact from "./Contact";
 
 export default function App() {
   const [active, setActive] = useState(0);
@@ -18,9 +19,9 @@ export default function App() {
       <div>
         <Portfolio />
       </div>
-      <div style={{ background: "#333" }}></div>
-      <div style={{ background: "#222" }}></div>
-      <div style={{ background: "#111" }}></div>
+      <div>
+        <Contact />
+      </div>
     </MegaScroll>
   );
 }

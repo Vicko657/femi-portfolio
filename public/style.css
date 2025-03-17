@@ -31,8 +31,26 @@ p {
   font-size: 24px;
   font-weight: 700;
   text-transform: uppercase;
-
   margin: 0px !important;
+}
+
+li {
+  font-family: "proxima-nova", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  width: 90%;
+  text-transform: uppercase;
+}
+
+li span {
+  opacity: 0.5;
+}
+
+em {
+  font-family: "proxima-nova", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
 }
 
 .card {
@@ -42,11 +60,19 @@ p {
 
 @media (max-width: 600px) {
   h1 {
-    font-size: 120px;
+    font-size: 90px;
     letter-spacing: -2px;
     line-height: 0.85;
   }
   h3 {
     font-size: 13px;
+  }
+
+  li {
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    width: 100%;
+    text-transform: uppercase;
   }
 }
