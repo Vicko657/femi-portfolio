@@ -470,7 +470,7 @@ export default function Portfolio() {
                 openAccordion === "minor" ? "show" : ""
               }`}
             >
-              <div className="accordion-body vh-100 d-flex rows ">
+              <div className="accordion-body vh-100 d-flex rows overflow-scroll ">
                 <div className="row">
                   <div className="col-lg-3 col-12 p-lg-5 pb-0 pt-3 p-5 ">
                     <p className="portfolio-role">Client</p>
@@ -478,7 +478,7 @@ export default function Portfolio() {
                     <p className="portfolio-role"> Role</p>
                     <h2 className="text-black mb-3">PRODUCTION MANAGER</h2>
                   </div>
-                  <div className="col-lg-5 col-12 p-lg-5 pt-0 p-5 overflow-auto">
+                  <div className="col-lg-5 col-12 p-lg-5 pt-0 p-5 ">
                     <h2 className="portfolio-main text-black mb-4">
                       As Production Manager for Channel 4.0's audacious series,
                       "Minor Issues," I orchestrated the seamless production of
@@ -567,7 +567,7 @@ export default function Portfolio() {
                 openAccordion === "worst" ? "show" : ""
               }`}
             >
-              <div className="accordion-body vh-100 d-flex rows ">
+              <div className="accordion-body vh-100 d-flex rows overflow-scroll">
                 <div className="row">
                   <div className="col-lg-3 col-12 p-lg-5 pb-0 pt-3 p-5 ">
                     <p className="portfolio-role">Client</p>
@@ -575,7 +575,7 @@ export default function Portfolio() {
                     <p className="portfolio-role"> Role</p>
                     <h2 className="text-black mb-3">PRODUCTION CO-ORDINATOR</h2>
                   </div>
-                  <div className="col-lg-5 col-12 p-lg-5 pt-0 p-5 overflow-auto">
+                  <div className="col-lg-5 col-12 p-lg-5 pt-0 p-5 ">
                     <h2 className="portfolio-main text-black mb-4">
                       As Production Manager for Channel 4.0's dynamic series,
                       "Harry Pinero's Worst In Class," I played a pivotal role
