@@ -2,11 +2,9 @@ import { useState, useEffect } from "react";
 import "./Header.css";
 const images = [
   "./imgs/femi_img_1.png",
-  "./imgs/femi_img_2.png",
   "./imgs/femi_img_3.png",
   "./imgs/femi_img_4.png",
   "./imgs/femi_img_5.png",
-  "./imgs/femi_img_6.png",
   "./imgs/femi_img_7.png",
 ];
 
