@@ -506,8 +506,6 @@ export default function Portfolio() {
                       attention, with individual episodes achieving impressive
                       view counts. For instance, the episode "Savage Kids RATE
                       Rappers!" has amassed over 5.1 million views on YouTube.
-                    </p>
-                    <p className="portfolio-text mb-4">
                       This success underscores the show's appeal and its
                       innovative approach to celebrity commentary. By blending
                       authenticity with entertainment, "Minor Issues" has carved
@@ -603,14 +601,12 @@ export default function Portfolio() {
                       reflected in its impressive viewership. The show has
                       amassed over 2.5 Million views across YouTube y The show's
                       popularity has led to multiple seasons, with the latest
-                      episodes continuing to attract significant attention.
-                    </p>
-                    <p className="portfolio-text mb-4">
-                      By combining humor with an unconventional classroom
-                      setting, "Harry Pinero's Worst In Class" has carved out a
-                      unique niche in digital entertainment, resonating with a
-                      diverse audience and contributing to Channel 4.0's
-                      innovative content lineup.
+                      episodes continuing to attract significant attention. By
+                      combining humor with an unconventional classroom setting,
+                      "Harry Pinero's Worst In Class" has carved out a unique
+                      niche in digital entertainment, resonating with a diverse
+                      audience and contributing to Channel 4.0's innovative
+                      content lineup.
                     </p>
                   </div>
                   <div className="col-4 p-5 d-lg-block d-none">
