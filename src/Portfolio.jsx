@@ -220,7 +220,7 @@ export default function Portfolio() {
             >
               <div className="accordion-body vh-100 d-flex rows">
                 <div className="row">
-                  <div className="col-lg-3 col-12 p-lg-5 pb-4 p-5 ">
+                  <div className="col-lg-3 col-12 p-lg-5 pb-2 pt-3 p-5 ">
                     <p className="portfolio-role">Client</p>
                     <h2 className="text-black mb-3">BBC THREE</h2>
                     <p className="portfolio-role"> Role</p>
@@ -377,7 +377,7 @@ export default function Portfolio() {
             >
               <div className="accordion-body vh-100 d-flex rows">
                 <div className="row">
-                  <div className="col-lg-3 col-12 p-lg-5 pb-4 p-5 ">
+                  <div className="col-lg-3 col-12 p-lg-5 pb-2 pt-3 p-5 ">
                     <p className="portfolio-role">Client</p>
                     <h2 className="text-black mb-3">PLT</h2>
                     <p className="portfolio-role"> Role</p>
@@ -472,7 +472,7 @@ export default function Portfolio() {
             >
               <div className="accordion-body vh-100 d-flex rows">
                 <div className="row">
-                  <div className="col-lg-3 col-12 p-lg-5 pb-4 p-5 ">
+                  <div className="col-lg-3 col-12 p-lg-5 pb-2 pt-3 p-5 ">
                     <p className="portfolio-role">Client</p>
                     <h2 className="text-black mb-3">CHANNEL 4.0</h2>
                     <p className="portfolio-role"> Role</p>
@@ -568,7 +568,7 @@ export default function Portfolio() {
             >
               <div className="accordion-body vh-100 d-flex rows">
                 <div className="row">
-                  <div className="col-lg-3 col-12 p-lg-5 pb-4 p-5 ">
+                  <div className="col-lg-3 col-12 p-lg-5 pb-2 pt-3 p-5 ">
                     <p className="portfolio-role">Client</p>
                     <h2 className="text-black mb-3">CHANNEL 4.0</h2>
                     <p className="portfolio-role"> Role</p>
@@ -666,7 +666,7 @@ export default function Portfolio() {
             >
               <div className="accordion-body vh-100 d-flex rows">
                 <div className="row">
-                  <div className="col-lg-3 col-12 p-lg-5 pb-4 p-5 ">
+                  <div className="col-lg-3 col-12 p-lg-5 pb-2 pt-3 p-5 ">
                     <p className="portfolio-role">Client</p>
                     <h2 className="text-black mb-3">CHANNEL 4.0</h2>
                     <p className="portfolio-role"> Role</p>
@@ -753,7 +753,7 @@ export default function Portfolio() {
             >
               <div className="accordion-body vh-100 d-flex rows">
                 <div className="row">
-                  <div className="col-lg-3 col-12 p-lg-5 pb-4 p-5 ">
+                  <div className="col-lg-3 col-12 p-lg-5 pb-2 pt-3 p-5 ">
                     <p className="portfolio-role">Client</p>
                     <h2 className="text-black mb-3">FOOTASYLUM</h2>
                     <p className="portfolio-role"> Role</p>
@@ -841,7 +841,7 @@ export default function Portfolio() {
             >
               <div className="accordion-body vh-100 d-flex rows">
                 <div className="row">
-                  <div className="col-lg-3 col-12 p-lg-5 pb-4 p-5 ">
+                  <div className="col-lg-3 col-12 p-lg-5 pb-2 pt-3 p-5 ">
                     <p className="portfolio-role">Client</p>
                     <h2 className="text-black mb-3">MCDONALDS</h2>
                     <p className="portfolio-role"> Role</p>
@@ -920,7 +920,7 @@ export default function Portfolio() {
             >
               <div className="accordion-body vh-100 d-flex rows">
                 <div className="row">
-                  <div className="col-lg-3 col-12 p-lg-5 pb-4 p-5 ">
+                  <div className="col-lg-3 col-12 p-lg-5 pb-2 pt-3 p-5 ">
                     <p className="portfolio-role">Client</p>
                     <h2 className="text-black mb-3">Niko</h2>
                     <p className="portfolio-role"> Role</p>
@@ -1001,7 +1001,7 @@ export default function Portfolio() {
             >
               <div className="accordion-body vh-100 d-flex rows">
                 <div className="row">
-                  <div className="col-lg-3 col-12 p-lg-5 pb-4 p-5 ">
+                  <div className="col-lg-3 col-12 p-lg-5 pb-2 pt-3 p-5 ">
                     <p className="portfolio-role">Client</p>
                     <h2 className="text-black mb-3">BOOHOOMAN</h2>
                     <p className="portfolio-role"> Role</p>
