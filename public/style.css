@@ -82,6 +82,9 @@ a :hover {
   h3 {
     font-size: 13px;
   }
+  a {
+    font-size: 14px;
+  }
 
   li {
     font-family: "proxima-nova", sans-serif;
