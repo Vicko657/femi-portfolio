@@ -10,22 +10,36 @@ const images = [
 
 export default function Header() {
   const [index, setIndex] = useState(0);
+  const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
-    const preloadImage = new Image();
-    preloadImage.src = images[(index + 1) % images.length];
+    let loadedImages = 0;
+    images.forEach((src) => {
+      const img = new Image();
+      img.src = src;
+      img.onload = () => {
+        loadedImages++;
+        if (loadedImages === images.length) {
+          setLoaded(true);
+        }
+      };
+    });
+  }, []);
+
+  useEffect(() => {
+    if (!loaded) return;
 
     const interval = setInterval(() => {
       setIndex((prevIndex) => (prevIndex + 1) % images.length);
     }, 7000);
 
     return () => clearInterval(interval);
-  }, [index]);
+  }, [index, loaded]);
 
   return (
     <div
       className="card header-bg h-100 d-flex flex-row"
-      style={{ backgroundImage: `url(${images[index]})` }}
+      style={{ backgroundImage: loaded ? `url(${images[index]})` : "none" }}
     >
       <div className="card-body d-flex flex-grow-1  flex-column ">
         <div className="p-5 top-row d-flex rows justify-content-between">
