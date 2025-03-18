@@ -35,12 +35,13 @@ export default function Portfolio() {
   return (
     <div className="portfolio-bg h-100">
       {openAccordion === null && (
-        <div className=" pt-5 ps-5 pb-4 row">
+        <div className=" pt-5 ps-5 pb-lg-2 pb-4 row">
           <div className="portfolio-header col-12 p-1 m-0">
             <h2>PORTFOLIO</h2>
             <p className="portfolio-summary">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Welcome to the world of Femi Opedo—a creative force in the media
+              industry, <br className="d-lg-block d-none" />
+              passionate about pushing boundaries through storytelling.
             </p>
           </div>
         </div>
@@ -382,7 +383,10 @@ export default function Portfolio() {
                     <h2 className="text-black mb-3">PLT</h2>
                     <p className="portfolio-role"> Role</p>
                     <h2 className="text-black mb-3">
-                      PRODUCTION CO-ORDINATOR/MANAGER
+                      PRODUCTION <br className="d-lg-block d-none" />
+                      CO-ORDINATOR
+                      <br className="d-lg-block d-none" />
+                      /MANAGER
                     </h2>
                   </div>
                   <div className="col-lg-5 col-12 p-lg-5 pt-0 p-5">
@@ -472,11 +476,14 @@ export default function Portfolio() {
             >
               <div className="accordion-body vh-lg-100 d-flex rows overflow-scroll ">
                 <div className="row">
-                  <div className="col-lg-3 col-12 p-lg-5 pb-0 pt-3 p-5 ">
-                    <p className="portfolio-role">Client</p>
-                    <h2 className="text-black mb-3">CHANNEL 4.0</h2>
-                    <p className="portfolio-role"> Role</p>
-                    <h2 className="text-black mb-3">PRODUCTION MANAGER</h2>
+                  <div className="client-role col-lg-3 col-12 p-lg-5 pb-0 pt-3 p-5 ">
+                    <p className="portfolio-role mb-2">Client</p>
+                    <h2 className="text-black mb-3 mb-lg-5">CHANNEL 4.0</h2>
+                    <p className="portfolio-role mb-2"> Role</p>
+                    <h2 className=" text-black mb-4">
+                      PRODUCTION <br className="d-lg-block d-none" />
+                      MANAGER
+                    </h2>
                   </div>
                   <div className="col-lg-5 col-12 p-lg-5 pt-0 p-5 ">
                     <h2 className="portfolio-main text-black mb-4">

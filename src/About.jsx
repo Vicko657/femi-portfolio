@@ -7,7 +7,7 @@ export default function About() {
       <div className="card-body  d-flex row">
         <div className="col-lg-5 col-12 p-lg-5">
           <h2>Who am I?</h2>
-          <p className="pb-4">
+          <p className="pb-2">
             I am an award-winning Producer and Production Manager with a proven
             track record of delivering high-profile projects. <br /> <br />
             From hit shows like Pink Courtroom to Minor Issues, I’ve worked with
@@ -17,6 +17,9 @@ export default function About() {
             content, I’m known for bringing ambitious visions to life with
             precision and creativity
           </p>
+          <a className="pe-2" href="linkedin.com/in/femi-opedo-1633471ab">
+            <em>LinkedIn</em>
+          </a>
 
           <a
             className="pe-2"
