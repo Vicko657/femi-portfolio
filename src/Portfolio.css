@@ -26,6 +26,8 @@
 .accordion-body {
   padding: 70px;
   line-height: 1;
+  overflow-y: auto !important;
+  -webkit-overflow-scrolling: touch;
 }
 button {
   border: none;
