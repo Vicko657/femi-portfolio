@@ -47,7 +47,7 @@ export default function Portfolio() {
   };
 
   return (
-    <div className="portfolio-bg h-100">
+    <div className="portfolio-bg h-100 overflow-auto">
       {openAccordion === null && (
         <div className=" pt-5 ps-5 pb-lg-2 pb-4 row">
           <div className="portfolio-header col-12 p-1 m-0">
