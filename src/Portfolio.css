@@ -172,7 +172,7 @@ button:focus {
 
 @media (max-width: 600px) {
   .client-role {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
   .accordion h2 {
     font-size: 16px;
