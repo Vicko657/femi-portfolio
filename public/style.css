@@ -82,15 +82,8 @@ a :hover {
   h3 {
     font-size: 13px;
   }
-  a {
-    font-size: 14px;
-  }
 
-  li {
-    font-family: "proxima-nova", sans-serif;
-    font-weight: 700;
+  em {
     font-size: 13px;
-    width: 100%;
-    text-transform: uppercase;
   }
 }

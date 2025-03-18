@@ -38,4 +38,7 @@ footer a:hover {
   .contact-bg img {
     width: 100%;
   }
+  footer {
+    font-size: 14px;
+  }
 }
