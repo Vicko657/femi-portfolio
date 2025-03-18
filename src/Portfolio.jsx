@@ -47,7 +47,7 @@ export default function Portfolio() {
   };
 
   return (
-    <div className="portfolio-bg h-100 overflow-auto">
+    <div className="portfolio-bg h-100 overflow-scroll">
       {openAccordion === null && (
         <div className=" pt-5 ps-5 pb-lg-2 pb-4 row">
           <div className="portfolio-header col-12 p-1 m-0">
@@ -87,9 +87,9 @@ export default function Portfolio() {
             >
               <div className="accordion-body vh-100 d-flex rows">
                 <div className="row">
-                  <div className="col-lg-7 col-12 p-lg-5 p-5">
+                  <div className="col-lg-8 col-12 p-lg-5 p-5">
                     <div className="client-role d-flex rows ">
-                      <div className="col-4 pe-3">
+                      <div className="col-4 me-3">
                         <p className="portfolio-role mb-2">Client</p>
                         <h2 className="text-black mb-2 mb-lg-5">JBL</h2>
                       </div>
@@ -153,7 +153,7 @@ export default function Portfolio() {
                     </p>
                   </div>
 
-                  <div className=" col-4 p-5  d-lg-block d-none">
+                  <div className="col-4   d-lg-block d-none">
                     <TiktokEmbed videoId="7464600504975297825" />
                   </div>
                 </div>
@@ -184,9 +184,9 @@ export default function Portfolio() {
             >
               <div className="accordion-body vh-100 d-flex rows">
                 <div className="row">
-                  <div className="col-lg-7 col-12 p-lg-5 p-5">
+                  <div className="col-lg-8 col-12 p-lg-5 p-5">
                     <div className="client-role d-flex rows ">
-                      <div className="col-4 pe-3">
+                      <div className="col-4 me-3">
                         <p className="portfolio-role mb-2">Client</p>
                         <h2 className="text-black mb-3 mb-lg-5">BBC THREE</h2>
                       </div>
@@ -253,7 +253,7 @@ export default function Portfolio() {
                       the new season.
                     </p>
                   </div>
-                  <div className="col-4 p-5  d-lg-block d-none">
+                  <div className="col-4  d-lg-block d-none">
                     <TiktokEmbed videoId="7463225910116896032" />
                   </div>
                 </div>
@@ -283,11 +283,11 @@ export default function Portfolio() {
                 openAccordion === "plt" ? "show" : ""
               }`}
             >
-              <div className="accordion-body vh-100 d-flex rows">
+              <div className="accordion-body vh-100 d-flex">
                 <div className="row">
-                  <div className="col-lg-7 col-12 p-lg-5 p-5">
+                  <div className="col-lg-8 col-12 p-lg-5 p-5">
                     <div className="client-role d-flex rows ">
-                      <div className="col-4 pe-3">
+                      <div className="col-4 me-3">
                         <p className="portfolio-role mb-2">Client</p>
                         <h2 className="text-black mb-3 mb-lg-5">PLT</h2>
                       </div>
@@ -336,8 +336,10 @@ export default function Portfolio() {
                       the world of digital entertainment.
                     </p>
                   </div>
-                  <div className="video-container col-4 p-5  d-lg-block d-none">
-                    <YoutubeEmbed videoId="FC4klvSe-P0?si=badpqNdcSs1K9lyf" />
+                  <div className="col-lg-4 p-1 video-container d-lg-block d-none">
+                    <div className="ratio ratio-16x9">
+                      <YoutubeEmbed videoId="FC4klvSe-P0?si=badpqNdcSs1K9lyf" />
+                    </div>
                     <br />
                     <em className="small mt-2">
                       THE PINK COURTROOM | S1 EP 1 | PrettyLittleThing
@@ -372,9 +374,9 @@ export default function Portfolio() {
             >
               <div className="accordion-body vh-100 d-flex rows overflow-scroll ">
                 <div className="row">
-                  <div className="col-lg-7 col-12 p-lg-5 p-5">
+                  <div className="col-lg-8 col-12 p-lg-5 p-5">
                     <div className="client-role d-flex rows ">
-                      <div className="col-4 pe-3">
+                      <div className="col-4 me-3">
                         <p className="portfolio-role mb-2">Client</p>
                         <h2 className="text-black mb-3 mb-lg-5">CHANNEL 4.0</h2>
                       </div>
@@ -424,8 +426,10 @@ export default function Portfolio() {
                       evolving landscape of audience engagement.
                     </p>
                   </div>
-                  <div className="video-container col-4 p-5  d-lg-block d-none">
-                    <YoutubeEmbed videoId="kgez5GmQ-6Y?si=O9nGacvvBH3H2UoW" />
+                  <div className="col-lg-4 p-1 video-container d-lg-block d-none">
+                    <div className="ratio ratio-16x9">
+                      <YoutubeEmbed videoId="kgez5GmQ-6Y?si=O9nGacvvBH3H2UoW" />
+                    </div>
                     <br />
                     <em className="small mt-2">
                       Savage Kids RATE Rappers! | Minor Issues | @channel4.0
@@ -460,9 +464,9 @@ export default function Portfolio() {
             >
               <div className="accordion-body vh-100 d-flex rows overflow-scroll">
                 <div className="row">
-                  <div className="col-lg-7 col-12 p-lg-5 p-5">
+                  <div className="col-lg-8 col-12 p-lg-5 p-5">
                     <div className="client-role d-flex rows ">
-                      <div className="col-4 pe-3">
+                      <div className="col-4 me-3">
                         <p className="portfolio-role mb-2">Client</p>
                         <h2 className="text-black mb-3 mb-lg-5">CHANNEL 4.0</h2>
                       </div>
@@ -516,8 +520,10 @@ export default function Portfolio() {
                       innovative content lineup.
                     </p>
                   </div>
-                  <div className="video-container col-4 p-5  d-lg-block d-none">
-                    <YoutubeEmbed videoId="nQprWww0m0U?si=R5zZY2tzdk1fmR_8" />
+                  <div className="col-lg-4 p-1 video-container d-lg-block d-none">
+                    <div className="ratio ratio-16x9">
+                      <YoutubeEmbed videoId="nQprWww0m0U?si=R5zZY2tzdk1fmR_8" />
+                    </div>
                     <br />
                     <em className="small mt-2">
                       Nella’s AWFUL Stormzy Impression Earns Her An F!! | Harry
@@ -552,9 +558,9 @@ export default function Portfolio() {
             >
               <div className="accordion-body vh-100 d-flex rows">
                 <div className="row">
-                  <div className="col-lg-7 col-12 p-lg-5 p-5">
+                  <div className="col-lg-8 col-12 p-lg-5 p-5">
                     <div className="client-role d-flex rows ">
-                      <div className="col-4 pe-3">
+                      <div className="col-4 me-3">
                         <p className="portfolio-role mb-2">Client</p>
                         <h2 className="text-black mb-3 mb-lg-5">CHANNEL 4.0</h2>
                       </div>
@@ -592,8 +598,10 @@ export default function Portfolio() {
                       the unexpected.
                     </p>
                   </div>
-                  <div className="video-container col-4 p-5  d-lg-block d-none">
-                    <YoutubeEmbed videoId="J4ZbSf-zLz8?si=BmquyeLpP2YfLtiL" />
+                  <div className="col-lg-4 p-1 video-container d-lg-block d-none">
+                    <div className="ratio ratio-16x9">
+                      <YoutubeEmbed videoId="J4ZbSf-zLz8?si=BmquyeLpP2YfLtiL" />
+                    </div>
                     <br />
                     <em className="small mt-2">
                       20 MEN VS NELLA ROSE: ICK EDITION | The Group Chat |
@@ -628,9 +636,9 @@ export default function Portfolio() {
             >
               <div className="accordion-body vh-100 d-flex rows">
                 <div className="row">
-                  <div className="col-lg-7 col-12 p-lg-5 p-5">
+                  <div className="col-lg-8 col-12 p-lg-5 p-5">
                     <div className="client-role d-flex rows ">
-                      <div className="col-4 pe-3">
+                      <div className="col-4 me-3">
                         <p className="portfolio-role mb-2">Client</p>
                         <h2 className="text-black mb-3 mb-lg-5">FOOTASYLUM</h2>
                       </div>
@@ -668,8 +676,10 @@ export default function Portfolio() {
                     </p>
                   </div>
 
-                  <div className="video-container col-4 p-5  d-lg-block d-none">
-                    <YoutubeEmbed videoId="LiMqlZYhk0c?si=kVnw2wxrrNyof-rY" />
+                  <div className="col-lg-4 p-1 video-container d-lg-block d-none">
+                    <div className="ratio ratio-16x9">
+                      <YoutubeEmbed videoId="LiMqlZYhk0c?si=kVnw2wxrrNyof-rY" />
+                    </div>
                     <br />
                     <em className="small mt-2">
                       GB Skip navigation Search Create 9+ Avatar image WHO'S THE
@@ -705,9 +715,9 @@ export default function Portfolio() {
             >
               <div className="accordion-body vh-100 d-flex rows">
                 <div className="row">
-                  <div className="col-lg-7 col-12 p-lg-5 p-5">
+                  <div className="col-lg-8 col-12 p-lg-5 p-5">
                     <div className="client-role d-flex rows ">
-                      <div className="col-4 pe-3">
+                      <div className="col-4 me-3">
                         <p className="portfolio-role mb-2">Client</p>
                         <h2 className="text-black mb-3 mb-lg-5">MCDONALDS</h2>
                       </div>
@@ -736,8 +746,10 @@ export default function Portfolio() {
                       met and exceeded the client’s expectations.
                     </p>
                   </div>
-                  <div className="video-container col-4 p-5  d-lg-block d-none">
-                    <YoutubeEmbed videoId="PoMnFptEJg8?si=kd-OfnJJhbs8Vb9I&amp;start=103" />
+                  <div className="col-lg-4 p-1 video-container d-lg-block d-none">
+                    <div className="ratio ratio-16x9">
+                      <YoutubeEmbed videoId="PoMnFptEJg8?si=kd-OfnJJhbs8Vb9I&amp;start=103" />
+                    </div>
                     <br />
                     <em className="small mt-2">
                       Harry Pinero Takes The McDonald’s McPlant Van To The
@@ -772,9 +784,9 @@ export default function Portfolio() {
             >
               <div className="accordion-body vh-100 d-flex rows">
                 <div className="row">
-                  <div className="col-lg-7 col-12 p-lg-5 p-5">
+                  <div className="col-lg-8 col-12 p-lg-5 p-5">
                     <div className="client-role d-flex rows ">
-                      <div className="col-4 pe-3">
+                      <div className="col-4 me-3">
                         <p className="portfolio-role mb-2">Client</p>
                         <h2 className="text-black mb-3 mb-lg-5">Niko</h2>
                       </div>
@@ -810,8 +822,10 @@ export default function Portfolio() {
                       objectives.
                     </p>
                   </div>
-                  <div className="video-container col-4 p-5  d-lg-block d-none">
-                    <YoutubeEmbed videoId="TFxhcnZqZPM?si=r2jMHNfOeYRDnVNJ" />
+                  <div className="col-lg-4 p-1 video-container d-lg-block d-none">
+                    <div className="ratio ratio-16x9">
+                      <YoutubeEmbed videoId="TFxhcnZqZPM?si=r2jMHNfOeYRDnVNJ" />
+                    </div>
                     <br />
                     <em className="small mt-2">Niko Vs The Prime Minister</em>
                   </div>
@@ -845,7 +859,7 @@ export default function Portfolio() {
                 <div className="row">
                   <div className="col-lg-7 col-12 p-lg-5 p-5">
                     <div className="client-role d-flex rows">
-                      <div className="col-4 pe-3">
+                      <div className="col-4 me-3">
                         <p className="portfolio-role mb-2">Client</p>
                         <h2 className="text-black mb-3 mb-lg-5">BOOHOOMAN</h2>
                       </div>
@@ -883,8 +897,10 @@ export default function Portfolio() {
                       that blended both generations' humor and style.
                     </p>
                   </div>
-                  <div className="video-container col-4 p-5  d-lg-block d-none ">
-                    <YoutubeEmbed videoId="6tkWo8hDCBA?si=UnUS25ZWHW8raInw" />
+                  <div className="col-lg-4 p-1 video-container d-lg-block d-none">
+                    <div className="ratio ratio-16x9">
+                      <YoutubeEmbed videoId="6tkWo8hDCBA?si=UnUS25ZWHW8raInw" />
+                    </div>
                     <br />
                     <em className="small mt-2">
                       PARENTAL GUIDANCE ft. Ty Logan | S1E1 | boohooMAN 2023

@@ -8,7 +8,7 @@ export default function TiktokEmbed({ videoId }) {
       data-video-id={videoId}
       style={{
         maxWidth: "100%",
-        minWidth: "250px",
+        minWidth: "350px",
         transform: "scale(0.8)",
         transformOrigin: "top left",
       }}
