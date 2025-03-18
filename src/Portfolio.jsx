@@ -460,7 +460,7 @@ export default function Portfolio() {
                 openAccordion === "worst" ? "show" : ""
               }`}
             >
-              <div className="accordion-body vh-100 d-flex rows overflow-scroll">
+              <div className="accordion-body h-100 vh-lg-100 d-flex rows overflow-scroll">
                 <div className="row">
                   <div className="col-lg-7 col-12 p-lg-5 p-5">
                     <div className="client-role d-flex rows ">
