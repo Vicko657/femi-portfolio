@@ -5,34 +5,6 @@
   margin: 0;
 }
 
-.accordion h2 {
-  font-size: 20px;
-  padding: 50px 0 0 0;
-  margin: 0;
-  color: white;
-  line-height: 1;
-}
-
-.accordion h2 :hover {
-  opacity: 0.5;
-}
-
-.portfolio-text {
-  font-size: 15px;
-  line-height: 1;
-}
-.portfolio-role {
-  font-size: 14px;
-  line-height: 1;
-  opacity: 0.5;
-}
-
-.accordion-body {
-  padding: 60px 70px;
-  line-height: 1;
-  overflow-y: auto !important;
-  -webkit-overflow-scrolling: touch;
-}
 button {
   border: none;
   padding: 20px 105px !important;
@@ -41,32 +13,46 @@ button:focus {
   border: none;
   outline: none;
 }
-.accordion-button:focus {
-  box-shadow: none;
-}
-
-.portfolio-summary {
-  font-size: 14px;
-  margin-top: 30px !important;
-  color: white;
-  opacity: 0.5;
-}
-.client-role h2 {
-  font-size: 28px;
-  font-style: italic;
-}
 
 .accordion-item {
   border: none;
   padding: 0 !important;
 }
-h2 .accordion-header {
-  padding: 0 !important;
-  margin: 0 !important;
-}
+
 .accordion-button {
   padding-left: 80px;
   padding-right: 80px;
+  background-color: black;
+  color: white;
+}
+.accordion-button:focus {
+  box-shadow: none;
+}
+.accordion-button::after {
+  filter: brightness(0) invert(1);
+}
+
+.accordion-button:not(.collapsed)::after {
+  filter: brightness(0) invert(1);
+}
+.accordion-button:not(.collapsed) {
+  color: white;
+}
+.accordion h2 {
+  font-size: 20px;
+  padding: 50px 0 0 0;
+  margin: 0;
+  color: white;
+  line-height: 1;
+}
+.accordion h2 :hover {
+  opacity: 0.5;
+}
+.accordion-body {
+  padding: 20px 70px;
+  line-height: 1;
+  overflow-y: auto !important;
+  -webkit-overflow-scrolling: touch;
 }
 
 .portfolio-header h2 {
@@ -75,22 +61,37 @@ h2 .accordion-header {
 .portfolio-header p {
   padding-left: 60px !important;
 }
-
-.accordion-button::after {
-  filter: brightness(0) invert(1);
-}
-
-.accordion-button:not(.collapsed)::after {
-  filter: brightness(0) invert(1);
-}
-
-.accordion-button {
-  background-color: black;
+.portfolio-summary {
+  font-size: 14px;
+  margin-top: 30px !important;
   color: white;
+  opacity: 0.5;
 }
 
-.accordion-button:not(.collapsed) {
-  color: white;
+.client-role {
+  margin-bottom: 100px;
+}
+.client-role h2 {
+  font-size: 24px;
+  font-style: italic;
+}
+.portfolio-main {
+  font-size: 24px !important;
+}
+.portfolio-text {
+  font-size: 15px;
+  line-height: 1;
+  font-weight: 400;
+}
+.portfolio-role {
+  font-size: 14px;
+  line-height: 1;
+  opacity: 0.5;
+}
+
+.video-container {
+  position: relative;
+  top: 90px;
 }
 
 .portfolio-jbl button {
@@ -145,7 +146,34 @@ h2 .accordion-header {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.accordion-body img {
+  width: 250% !important;
+}
+
+@media (max-width: 1200px) {
+  .client-role h2 {
+    font-size: 20px;
+    font-style: italic;
+  }
+  .portfolio-main {
+    font-size: 24px !important;
+  }
+  .portfolio-text {
+    font-size: 15px;
+    line-height: 1;
+    font-weight: 400;
+  }
+  .portfolio-role {
+    font-size: 14px;
+    line-height: 1;
+    opacity: 0.5;
+  }
+}
+
 @media (max-width: 600px) {
+  .client-role {
+    margin-bottom: 40px;
+  }
   .accordion h2 {
     font-size: 16px;
     padding: 50px 0 0 0px;

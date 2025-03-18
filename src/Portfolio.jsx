@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
 
 import "./Portfolio.css";
+import TiktokEmbed from "./TiktokEmbed";
+import YoutubeEmbed from "./YoutubeEmbed";
 
 export default function Portfolio() {
   const [openAccordion, setOpenAccordion] = useState(null);
@@ -28,6 +30,18 @@ export default function Portfolio() {
           behavior: "smooth",
           block: "start",
         });
+
+        const oldScript = document.querySelector(
+          'script[src="https://www.tiktok.com/embed.js"]'
+        );
+        if (oldScript) {
+          oldScript.remove();
+        }
+
+        const script = document.createElement("script");
+        script.src = "https://www.tiktok.com/embed.js";
+        script.async = true;
+        document.body.appendChild(script);
       }, 400);
     }
   };
@@ -73,13 +87,18 @@ export default function Portfolio() {
             >
               <div className="accordion-body vh-100 d-flex rows">
                 <div className="row">
-                  <div className="col-lg-3 col-12 p-lg-5 pb-2 pt-3 p-5 ">
-                    <p className="portfolio-role">Client</p>
-                    <h2 className="text-black mb-3">JBL</h2>
-                    <p className="portfolio-role"> Role</p>
-                    <h2 className="text-black mb-3">Producer/Writer</h2>
-                  </div>
-                  <div className="col-lg-5 col-12 p-lg-5 pt-0 p-5">
+                  <div className="col-lg-7 col-12 p-lg-5 p-5">
+                    <div className="client-role d-flex rows ">
+                      <div className="col-4 pe-3">
+                        <p className="portfolio-role mb-2">Client</p>
+                        <h2 className="text-black mb-2 mb-lg-5">JBL</h2>
+                      </div>
+                      <div className="col-8">
+                        <p className="portfolio-role mb-2"> Role</p>
+                        <h2 className="text-black mb-4">Producer & Writer</h2>
+                      </div>
+                    </div>
+
                     <h2 className="portfolio-main text-black mb-4">
                       JBL approached us to lead a dynamic marketing campaign for
                       their latest Live 770 headphones, blending engaging
@@ -94,20 +113,20 @@ export default function Portfolio() {
                     </p>
 
                     <ul className="mt-4 mb-4">
-                      <li className="mb-2">
-                        🎤 Street Content with Klaudia{" "}
+                      <li className="mb-3">
+                        🎤 Street Content with Klaudia <br />
                         <span>
-                          – Taking to the streets, we captured authentic,
+                          Taking to the streets, we captured authentic,
                           high-energy interactions that put the Live 770s to the
                           test in real-world scenarios, emphasizing their
                           seamless connectivity and premium sound quality.
                         </span>
                       </li>
 
-                      <li className="mb-2">
-                        💪 Competition Content with Armz in Gyms{" "}
+                      <li className="mb-3">
+                        💪 Competition Content with Armz in Gyms <br />
                         <span>
-                          – Showcasing the durability and stability of the
+                          Showcasing the durability and stability of the
                           headphones, we brought them into the fitness world,
                           where Armz led high-intensity challenges, proving that
                           JBL’s Live 770s can keep up with even the toughest
@@ -116,9 +135,9 @@ export default function Portfolio() {
                       </li>
 
                       <li>
-                        🎭 Skit Creations{" "}
+                        🎭 Skit Creations <br />
                         <span>
-                          – Infused with humor and creativity, our skits
+                          Infused with humor and creativity, our skits
                           highlighted the headphones’ standout features, from
                           adaptive noise cancellation to 360-degree spatial
                           sound, making product education both entertaining and
@@ -134,64 +153,8 @@ export default function Portfolio() {
                     </p>
                   </div>
 
-                  <div className="col-4 p-5">
-                    <blockquote
-                      className="tiktok-embed d-lg-block d-none"
-                      cite="https://www.tiktok.com/@jblaudio.uk/video/7464600504975297825"
-                      data-video-id="7464600504975297825"
-                      style={{
-                        maxWidth: "100%",
-                        minWidth: "250px",
-                        transform: "scale(0.7)",
-                        margin: "0px",
-                        transformOrigin: "top left",
-                      }}
-                    >
-                      <section>
-                        <a
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          title="@jblaudio.uk"
-                          href="https://www.tiktok.com/@jblaudio.uk?refer=embed"
-                        >
-                          @jblaudio.uk
-                        </a>{" "}
-                        @benzothe1st_ & @elliottjcass deserve a rising star
-                        nomination for this d r a m a 🏆{" "}
-                        <a
-                          title="jbllivebeam3"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          href="https://www.tiktok.com/tag/jbllivebeam3?refer=embed"
-                        >
-                          #JBLLiveBeam3
-                        </a>{" "}
-                        <a
-                          title="jbluk"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          href="https://www.tiktok.com/tag/jbluk?refer=embed"
-                        >
-                          #JBLUK
-                        </a>{" "}
-                        <a
-                          title="commute"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          href="https://www.tiktok.com/tag/commute?refer=embed"
-                        >
-                          #commute
-                        </a>{" "}
-                        <a
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          title="♬ original sound - JBLaudio UK"
-                          href="https://www.tiktok.com/music/original-sound-7464601672250100512?refer=embed"
-                        >
-                          ♬ original sound - JBLaudio UK
-                        </a>
-                      </section>
-                    </blockquote>
+                  <div className="video-container col-4 p-5  d-lg-block d-none">
+                    <TiktokEmbed videoId="7464600504975297825" />
                   </div>
                 </div>
               </div>
@@ -221,13 +184,18 @@ export default function Portfolio() {
             >
               <div className="accordion-body vh-100 d-flex rows">
                 <div className="row">
-                  <div className="col-lg-3 col-12 p-lg-5 pb-2 pt-3 p-5 ">
-                    <p className="portfolio-role">Client</p>
-                    <h2 className="text-black mb-3">BBC THREE</h2>
-                    <p className="portfolio-role"> Role</p>
-                    <h2 className="text-black mb-3">CONTENT STRATEGY</h2>
-                  </div>
-                  <div className="col-lg-5 col-12 p-lg-5 pt-0 p-5">
+                  <div className="col-lg-7 col-12 p-lg-5 p-5">
+                    <div className="client-role d-flex rows ">
+                      <div className="col-4 pe-3">
+                        <p className="portfolio-role mb-2">Client</p>
+                        <h2 className="text-black mb-3 mb-lg-5">BBC THREE</h2>
+                      </div>
+                      <div className="col-8">
+                        <p className="portfolio-role mb-2"> Role</p>
+                        <h2 className="text-black mb-4">CONTENT STRATEGY</h2>
+                      </div>
+                    </div>
+
                     <h2 className="portfolio-main text-black mb-4">
                       Ahead of the highly anticipated release of Boarders Season
                       2, the BBC approached us to create a dynamic campaign that
@@ -239,34 +207,38 @@ export default function Portfolio() {
                     <p className="portfolio-text">
                       To achieve this, we developed a bespoke content strategy
                       that blended entertainment and engagement, ensuring
-                      maximum reach across social platforms. The campaign
-                      included:
+                      maximum reach across social platforms. <br />
+                      <br />
+                      The campaign included:
                     </p>
 
                     <ul className="mt-4 mb-4">
-                      <li className="mb-2">
+                      <li className="mb-3">
                         🎭 Sit-Down Games with the Cast
+                        <br />
                         <span>
-                          – We brought the cast together for a series of fun,
+                          We brought the cast together for a series of fun,
                           interactive games, allowing audiences to see their
                           chemistry, humor, and personalities beyond the show.
                         </span>
                       </li>
 
-                      <li className="mb-2">
+                      <li className="mb-3">
                         🎬 Skit Creations
+                        <br />
                         <span>
-                          – We produced engaging, shareable skits inspired by
-                          the show’s themes and characters, using humor and
+                          We produced engaging, shareable skits inspired by the
+                          show’s themes and characters, using humor and
                           relatability to drive interest and conversation around
                           the series.
                         </span>
                       </li>
 
-                      <li className="mb-2">
+                      <li className="mb-3">
                         📺 Repurposed Content
+                        <br />
                         <span>
-                          – Leveraging key moments from Season 1 alongside fresh
+                          Leveraging key moments from Season 1 alongside fresh
                           Season 2 assets, we strategically reintroduced the
                           show to new audiences while keeping longtime fans
                           engaged.
@@ -281,73 +253,8 @@ export default function Portfolio() {
                       the new season.
                     </p>
                   </div>
-                  <div className="col-4 p-5">
-                    <blockquote
-                      class="tiktok-embed d-lg-block d-none"
-                      cite="https://www.tiktok.com/@wallofentertainment/video/7463225910116896032"
-                      data-video-id="7463225910116896032"
-                      style={{
-                        maxWidth: "100%",
-                        minWidth: "250px",
-                        transform: "scale(0.8)",
-                        margin: "0px",
-                        transformOrigin: "top left",
-                      }}
-                    >
-                      {" "}
-                      <section>
-                        {" "}
-                        <a
-                          target="_blank"
-                          title="@wallofentertainment"
-                          href="https://www.tiktok.com/@wallofentertainment?refer=embed"
-                        >
-                          @wallofentertainment
-                        </a>{" "}
-                        Sekou plays who’s most likely to 🤔💭 Watch{" "}
-                        <a
-                          title="Boarders"
-                          target="_blank"
-                          href="https://www.tiktok.com/tag/Boarders?refer=embed"
-                        >
-                          #Boarders
-                        </a>{" "}
-                        series 1 now on{" "}
-                        <a
-                          title="bbciplayer"
-                          target="_blank"
-                          href="https://www.tiktok.com/tag/bbciplayer?refer=embed"
-                        >
-                          #bbciplayer
-                        </a>{" "}
-                        &#38;{" "}
-                        <a
-                          title="bbcthree"
-                          target="_blank"
-                          href="https://www.tiktok.com/tag/bbcthree?refer=embed"
-                        >
-                          #bbcthree
-                        </a>{" "}
-                        <a
-                          title="toby"
-                          target="_blank"
-                          href="https://www.tiktok.com/tag/toby?refer=embed"
-                        >
-                          #toby
-                        </a>{" "}
-                        <a
-                          target="_blank"
-                          title="♬ original sound - Wall of Entertainment"
-                          href="https://www.tiktok.com/music/original-sound-7463225972226083617?refer=embed"
-                        >
-                          ♬ original sound - Wall of Entertainment
-                        </a>{" "}
-                      </section>{" "}
-                    </blockquote>{" "}
-                    <script
-                      async
-                      src="https://www.tiktok.com/embed.js"
-                    ></script>
+                  <div className="video-container col-4 p-5  d-lg-block d-none">
+                    <TiktokEmbed videoId="7463225910116896032" />
                   </div>
                 </div>
               </div>
@@ -378,18 +285,20 @@ export default function Portfolio() {
             >
               <div className="accordion-body vh-100 d-flex rows">
                 <div className="row">
-                  <div className="col-lg-3 col-12 p-lg-5 pb-0 pt-3 p-5 ">
-                    <p className="portfolio-role">Client</p>
-                    <h2 className="text-black mb-3">PLT</h2>
-                    <p className="portfolio-role"> Role</p>
-                    <h2 className="text-black mb-3">
-                      PRODUCTION <br className="d-lg-block d-none" />
-                      CO-ORDINATOR
-                      <br className="d-lg-block d-none" />
-                      /MANAGER
-                    </h2>
-                  </div>
-                  <div className="col-lg-5 col-12 p-lg-5 pt-0 p-5">
+                  <div className="col-lg-7 col-12 p-lg-5 p-5">
+                    <div className="client-role d-flex rows ">
+                      <div className="col-4 pe-3">
+                        <p className="portfolio-role mb-2">Client</p>
+                        <h2 className="text-black mb-3 mb-lg-5">PLT</h2>
+                      </div>
+                      <div className="col-8">
+                        <p className="portfolio-role mb-2"> Role</p>
+                        <h2 className="text-black mb-4">
+                          PRODUCTION CO-ORDINATOR & MANAGER
+                        </h2>
+                      </div>
+                    </div>
+
                     <h2 className="portfolio-main text-black mb-4">
                       As Production Manager for PrettyLittleThing’s hit YouTube
                       series, "The Pink Courtroom," I played a key role in
@@ -423,29 +332,14 @@ export default function Portfolio() {
                       captivate viewers, reinforcing the brand’s influence in
                       the world of digital entertainment.
                     </p>
+                    <img className="img-fluid" src="./imgs/plt_youtube.png" />
                   </div>
-                  <div className="col-4 p-5 d-lg-block d-none">
-                    <iframe
-                      style={{
-                        maxWidth: "100%",
-                        minWidth: "250px",
-                        margin: "0px",
-                        transformOrigin: "top left",
-                      }}
-                      width="530"
-                      height="305"
-                      src="https://www.youtube.com/embed/FC4klvSe-P0?si=badpqNdcSs1K9lyf"
-                      title="YouTube video player"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      referrerpolicy="strict-origin-when-cross-origin"
-                      allowfullscreen
-                    ></iframe>
+                  <div className="video-container col-4 p-5  d-lg-block d-none">
+                    <YoutubeEmbed videoId="FC4klvSe-P0?si=badpqNdcSs1K9lyf" />
                     <br />
-                    <em className=" mt-2">
+                    <em className="small mt-2">
                       THE PINK COURTROOM | S1 EP 1 | PrettyLittleThing
                     </em>
-                    <img className="img-fluid" src="./imgs/plt_youtube.png" />
                   </div>
                 </div>
               </div>
@@ -474,18 +368,20 @@ export default function Portfolio() {
                 openAccordion === "minor" ? "show" : ""
               }`}
             >
-              <div className="accordion-body vh-lg-100 d-flex rows overflow-scroll ">
+              <div className="accordion-body vh-100 d-flex rows overflow-scroll ">
                 <div className="row">
-                  <div className="client-role col-lg-3 col-12 p-lg-5 pb-0 pt-3 p-5 ">
-                    <p className="portfolio-role mb-2">Client</p>
-                    <h2 className="text-black mb-3 mb-lg-5">CHANNEL 4.0</h2>
-                    <p className="portfolio-role mb-2"> Role</p>
-                    <h2 className=" text-black mb-4">
-                      PRODUCTION <br className="d-lg-block d-none" />
-                      MANAGER
-                    </h2>
-                  </div>
-                  <div className="col-lg-5 col-12 p-lg-5 pt-0 p-5 ">
+                  <div className="col-lg-7 col-12 p-lg-5 p-5">
+                    <div className="client-role d-flex rows ">
+                      <div className="col-4 pe-3">
+                        <p className="portfolio-role mb-2">Client</p>
+                        <h2 className="text-black mb-3 mb-lg-5">CHANNEL 4.0</h2>
+                      </div>
+                      <div className="col-8">
+                        <p className="portfolio-role mb-2"> Role</p>
+                        <h2 className=" text-black mb-4">PRODUCTION MANAGER</h2>
+                      </div>
+                    </div>
+
                     <h2 className="portfolio-main text-black mb-4">
                       As Production Manager for Channel 4.0's audacious series,
                       "Minor Issues," I orchestrated the seamless production of
@@ -522,30 +418,17 @@ export default function Portfolio() {
                       out a unique niche in digital content, reflecting the
                       evolving landscape of audience engagement.
                     </p>
+                    <img
+                      className="mt-2 img-fluid"
+                      src="./imgs/minor_youtube.png"
+                    />
                   </div>
-                  <div className="col-4 p-5 d-lg-block d-none">
-                    <iframe
-                      style={{
-                        maxWidth: "100%",
-                        minWidth: "250px",
-                        margin: "0px",
-                        transformOrigin: "top left",
-                      }}
-                      width="530"
-                      height="305"
-                      src="https://www.youtube.com/embed/kgez5GmQ-6Y?si=O9nGacvvBH3H2UoW"
-                      title="YouTube video player"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      referrerpolicy="strict-origin-when-cross-origin"
-                      allowfullscreen
-                    ></iframe>
-
+                  <div className="video-container col-4 p-5  d-lg-block d-none">
+                    <YoutubeEmbed videoId="kgez5GmQ-6Y?si=O9nGacvvBH3H2UoW" />
                     <br />
-                    <em className=" mt-2">
+                    <em className="small mt-2">
                       Savage Kids RATE Rappers! | Minor Issues | @channel4.0
                     </em>
-                    <img className="img-fluid" src="./imgs/minor_youtube.png" />
                   </div>
                 </div>
               </div>
@@ -574,15 +457,21 @@ export default function Portfolio() {
                 openAccordion === "worst" ? "show" : ""
               }`}
             >
-              <div className="accordion-body vh-lg-100 d-flex rows overflow-scroll">
+              <div className="accordion-body vh-100 d-flex rows overflow-scroll">
                 <div className="row">
-                  <div className="col-lg-3 col-12 p-lg-5 pb-0 pt-3 p-5 ">
-                    <p className="portfolio-role">Client</p>
-                    <h2 className="text-black mb-3">CHANNEL 4.0</h2>
-                    <p className="portfolio-role"> Role</p>
-                    <h2 className="text-black mb-3">PRODUCTION CO-ORDINATOR</h2>
-                  </div>
-                  <div className="col-lg-5 col-12 p-lg-5 pt-0 p-5 ">
+                  <div className="col-lg-7 col-12 p-lg-5 p-5">
+                    <div className="client-role d-flex rows ">
+                      <div className="col-4 pe-3">
+                        <p className="portfolio-role mb-2">Client</p>
+                        <h2 className="text-black mb-3 mb-lg-5">CHANNEL 4.0</h2>
+                      </div>
+                      <div className="col-8">
+                        <p className="portfolio-role mb-2"> Role</p>
+                        <h2 className="text-black mb-4">
+                          PRODUCTION CO-ORDINATOR
+                        </h2>
+                      </div>
+                    </div>
                     <h2 className="portfolio-main text-black mb-4">
                       As Production Manager for Channel 4.0's dynamic series,
                       "Harry Pinero's Worst In Class," I played a pivotal role
@@ -620,31 +509,15 @@ export default function Portfolio() {
                       diverse audience and contributing to Channel 4.0's
                       innovative content lineup.
                     </p>
+                    <img className="img-fluid" src="./imgs/worst_youtube.png" />
                   </div>
-                  <div className="col-4 p-5 d-lg-block d-none">
-                    <iframe
-                      style={{
-                        maxWidth: "100%",
-                        minWidth: "250px",
-                        margin: "0px",
-                        transformOrigin: "top left",
-                      }}
-                      width="530"
-                      height="305"
-                      src="https://www.youtube.com/embed/nQprWww0m0U?si=R5zZY2tzdk1fmR_8"
-                      title="YouTube video player"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      referrerpolicy="strict-origin-when-cross-origin"
-                      allowfullscreen
-                    ></iframe>
-
+                  <div className="video-container col-4 p-5  d-lg-block d-none">
+                    <YoutubeEmbed videoId="nQprWww0m0U?si=R5zZY2tzdk1fmR_8" />
                     <br />
-                    <em className=" mt-2">
+                    <em className="small mt-2">
                       Nella’s AWFUL Stormzy Impression Earns Her An F!! | Harry
                       Pinero's Worst In Class | Channel 4.0
                     </em>
-                    <img className="img-fluid" src="./imgs/worst_youtube.png" />
                   </div>
                 </div>
               </div>
@@ -674,13 +547,18 @@ export default function Portfolio() {
             >
               <div className="accordion-body vh-100 d-flex rows">
                 <div className="row">
-                  <div className="col-lg-3 col-12 p-lg-5 pb-2 pt-3 p-5 ">
-                    <p className="portfolio-role">Client</p>
-                    <h2 className="text-black mb-3">CHANNEL 4.0</h2>
-                    <p className="portfolio-role"> Role</p>
-                    <h2 className="text-black mb-3">PRODUCTION MANAGER</h2>
-                  </div>
-                  <div className="col-lg-5 col-12 p-lg-5 pt-0 p-5">
+                  <div className="col-lg-7 col-12 p-lg-5 p-5">
+                    <div className="client-role d-flex rows ">
+                      <div className="col-4 pe-3">
+                        <p className="portfolio-role mb-2">Client</p>
+                        <h2 className="text-black mb-3 mb-lg-5">CHANNEL 4.0</h2>
+                      </div>
+                      <div className="col-8">
+                        <p className="portfolio-role mb-2"> Role</p>
+                        <h2 className="text-black mb-4">PRODUCTION MANAGER</h2>
+                      </div>
+                    </div>
+
                     <h2 className="portfolio-main text-black mb-4">
                       When Channel 4.0 approached the team to create Group Chat,
                       a fast-paced digital sketch show, I stepped in as
@@ -709,26 +587,10 @@ export default function Portfolio() {
                       the unexpected.
                     </p>
                   </div>
-                  <div className="col-4 p-5 d-lg-block d-none">
-                    <iframe
-                      style={{
-                        maxWidth: "100%",
-                        minWidth: "250px",
-                        margin: "0px",
-                        transformOrigin: "top left",
-                      }}
-                      width="530"
-                      height="305"
-                      src="https://www.youtube.com/embed/J4ZbSf-zLz8?si=BmquyeLpP2YfLtiL"
-                      title="YouTube video player"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      referrerpolicy="strict-origin-when-cross-origin"
-                      allowfullscreen
-                    ></iframe>
-
+                  <div className="video-container col-4 p-5  d-lg-block d-none">
+                    <YoutubeEmbed videoId="J4ZbSf-zLz8?si=BmquyeLpP2YfLtiL" />
                     <br />
-                    <em className=" mt-2">
+                    <em className="small mt-2">
                       20 MEN VS NELLA ROSE: ICK EDITION | The Group Chat |
                       @channel4.0
                     </em>
@@ -751,7 +613,7 @@ export default function Portfolio() {
                 type="button"
                 onClick={() => toggleAccordion("who")}
               >
-                <h2>Whos The</h2>
+                <h2>Who's The</h2>
               </button>
             </h2>
             <div
@@ -761,13 +623,17 @@ export default function Portfolio() {
             >
               <div className="accordion-body vh-100 d-flex rows">
                 <div className="row">
-                  <div className="col-lg-3 col-12 p-lg-5 pb-2 pt-3 p-5 ">
-                    <p className="portfolio-role">Client</p>
-                    <h2 className="text-black mb-3">FOOTASYLUM</h2>
-                    <p className="portfolio-role"> Role</p>
-                    <h2 className="text-black mb-3">PRODUCTION MANAGER</h2>
-                  </div>
-                  <div className="col-lg-5 col-12 p-lg-5 pt-0 p-5">
+                  <div className="col-lg-7 col-12 p-lg-5 p-5">
+                    <div className="client-role d-flex rows ">
+                      <div className="col-4 pe-3">
+                        <p className="portfolio-role mb-2">Client</p>
+                        <h2 className="text-black mb-3 mb-lg-5">FOOTASYLUM</h2>
+                      </div>
+                      <div className="col-8">
+                        <p className="portfolio-role mb-2">Role</p>
+                        <h2 className="text-black mb-4">PRODUCTION MANAGER</h2>
+                      </div>
+                    </div>
                     <h2 className="portfolio-main text-black mb-4">
                       Who's The is a witty, fast-paced chat show where talented
                       individuals debate intriguing topics and choose who among
@@ -796,26 +662,11 @@ export default function Portfolio() {
                       the audience.
                     </p>
                   </div>
-                  <div className="col-4 p-5 d-lg-block d-none">
-                    <iframe
-                      style={{
-                        maxWidth: "100%",
-                        minWidth: "250px",
-                        margin: "0px",
-                        transformOrigin: "top left",
-                      }}
-                      width="530"
-                      height="305"
-                      src="https://www.youtube.com/embed/LiMqlZYhk0c?si=kVnw2wxrrNyof-rY"
-                      title="YouTube video player"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      referrerpolicy="strict-origin-when-cross-origin"
-                      allowfullscreen
-                    ></iframe>
 
+                  <div className="video-container col-4 p-5  d-lg-block d-none">
+                    <YoutubeEmbed videoId="LiMqlZYhk0c?si=kVnw2wxrrNyof-rY" />
                     <br />
-                    <em className=" mt-2">
+                    <em className="small mt-2">
                       GB Skip navigation Search Create 9+ Avatar image WHO'S THE
                       BOUGIEST? YUNG FILLY, DARKEST MAN OR ADEOLA? | Who's
                       The... S2 Ep3
@@ -849,13 +700,17 @@ export default function Portfolio() {
             >
               <div className="accordion-body vh-100 d-flex rows">
                 <div className="row">
-                  <div className="col-lg-3 col-12 p-lg-5 pb-2 pt-3 p-5 ">
-                    <p className="portfolio-role">Client</p>
-                    <h2 className="text-black mb-3">MCDONALDS</h2>
-                    <p className="portfolio-role"> Role</p>
-                    <h2 className="text-black mb-3">PRODUCTION MANAGER</h2>
-                  </div>
-                  <div className="col-lg-5 col-12 p-lg-5 pt-0 p-5">
+                  <div className="col-lg-7 col-12 p-lg-5 p-5">
+                    <div className="client-role d-flex rows ">
+                      <div className="col-4 pe-3">
+                        <p className="portfolio-role mb-2">Client</p>
+                        <h2 className="text-black mb-3 mb-lg-5">MCDONALDS</h2>
+                      </div>
+                      <div className="col-8">
+                        <p className="portfolio-role mb-2"> Role</p>
+                        <h2 className="text-black mb-4">PRODUCTION MANAGER</h2>
+                      </div>
+                    </div>
                     <h2 className="portfolio-main text-black mb-4">
                       For the McDonald's McPlant campaign, we took to the
                       streets of London to capture the public’s honest reviews
@@ -876,26 +731,10 @@ export default function Portfolio() {
                       met and exceeded the client’s expectations.
                     </p>
                   </div>
-                  <div className="col-4 p-5 d-lg-block d-none">
-                    <iframe
-                      style={{
-                        maxWidth: "100%",
-                        minWidth: "250px",
-                        margin: "0px",
-                        transformOrigin: "top left",
-                      }}
-                      width="530"
-                      height="305"
-                      src="https://www.youtube.com/embed/PoMnFptEJg8?si=kd-OfnJJhbs8Vb9I&amp;start=103"
-                      title="YouTube video player"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      referrerpolicy="strict-origin-when-cross-origin"
-                      allowfullscreen
-                    ></iframe>
-
+                  <div className="video-container col-4 p-5  d-lg-block d-none">
+                    <YoutubeEmbed videoId="PoMnFptEJg8?si=kd-OfnJJhbs8Vb9I&amp;start=103" />
                     <br />
-                    <em className=" mt-2">
+                    <em className="small mt-2">
                       Harry Pinero Takes The McDonald’s McPlant Van To The
                       Streets
                     </em>
@@ -928,13 +767,19 @@ export default function Portfolio() {
             >
               <div className="accordion-body vh-100 d-flex rows">
                 <div className="row">
-                  <div className="col-lg-3 col-12 p-lg-5 pb-2 pt-3 p-5 ">
-                    <p className="portfolio-role">Client</p>
-                    <h2 className="text-black mb-3">Niko</h2>
-                    <p className="portfolio-role"> Role</p>
-                    <h2 className="text-black mb-3">PRODUCTION CO-ORDINATOR</h2>
-                  </div>
-                  <div className="col-lg-5 col-12 p-lg-5 pt-0 p-5">
+                  <div className="col-lg-7 col-12 p-lg-5 p-5">
+                    <div className="client-role d-flex rows ">
+                      <div className="col-4 pe-3">
+                        <p className="portfolio-role mb-2">Client</p>
+                        <h2 className="text-black mb-3 mb-lg-5">Niko</h2>
+                      </div>
+                      <div className="col-8">
+                        <p className="portfolio-role mb-2">Role</p>
+                        <h2 className="text-black mb-4">
+                          PRODUCTION CO-ORDINATOR
+                        </h2>
+                      </div>
+                    </div>
                     <h2 className="portfolio-main text-black mb-4">
                       I had the privilege of working as a Production Coordinator
                       on Nikos NDL’s Mayor Campaign, where my role was to align
@@ -960,26 +805,10 @@ export default function Portfolio() {
                       objectives.
                     </p>
                   </div>
-                  <div className="col-4 p-5 d-lg-block d-none">
-                    <iframe
-                      style={{
-                        maxWidth: "100%",
-                        minWidth: "250px",
-                        margin: "0px",
-                        transformOrigin: "top left",
-                      }}
-                      width="530"
-                      height="305"
-                      src="https://www.youtube.com/embed/TFxhcnZqZPM?si=r2jMHNfOeYRDnVNJ"
-                      title="YouTube video player"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      referrerpolicy="strict-origin-when-cross-origin"
-                      allowfullscreen
-                    ></iframe>
-
+                  <div className="video-container col-4 p-5  d-lg-block d-none">
+                    <YoutubeEmbed videoId="TFxhcnZqZPM?si=r2jMHNfOeYRDnVNJ" />
                     <br />
-                    <em className=" mt-2">Niko Vs The Prime Minister</em>
+                    <em className="small mt-2">Niko Vs The Prime Minister</em>
                   </div>
                 </div>
               </div>
@@ -1009,13 +838,19 @@ export default function Portfolio() {
             >
               <div className="accordion-body vh-100 d-flex rows">
                 <div className="row">
-                  <div className="col-lg-3 col-12 p-lg-5 pb-2 pt-3 p-5 ">
-                    <p className="portfolio-role">Client</p>
-                    <h2 className="text-black mb-3">BOOHOOMAN</h2>
-                    <p className="portfolio-role"> Role</p>
-                    <h2 className="text-black mb-3">PRODUCTION CO-ORDINATOR</h2>
-                  </div>
-                  <div className="col-lg-5 col-12 p-lg-5 pt-0 p-5">
+                  <div className="col-lg-7 col-12 p-lg-5 p-5">
+                    <div className="client-role d-flex rows">
+                      <div className="col-4 pe-3">
+                        <p className="portfolio-role mb-2">Client</p>
+                        <h2 className="text-black mb-3 mb-lg-5">BOOHOOMAN</h2>
+                      </div>
+                      <div className="col-8">
+                        <p className="portfolio-role mb-2"> Role</p>
+                        <h2 className="text-black mb-4">
+                          PRODUCTION CO-ORDINATOR
+                        </h2>
+                      </div>
+                    </div>
                     <h2 className="portfolio-main text-black mb-4">
                       Parental Guidance by BoohooMan is a unique dating show
                       where two generations come together to help find the
@@ -1043,26 +878,10 @@ export default function Portfolio() {
                       that blended both generations' humor and style.
                     </p>
                   </div>
-                  <div className="col-4 p-5 d-lg-block d-none">
-                    <iframe
-                      style={{
-                        maxWidth: "100%",
-                        minWidth: "250px",
-                        margin: "0px",
-                        transformOrigin: "top left",
-                      }}
-                      width="530"
-                      height="305"
-                      src="https://www.youtube.com/embed/6tkWo8hDCBA?si=UnUS25ZWHW8raInw"
-                      title="YouTube video player"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      referrerpolicy="strict-origin-when-cross-origin"
-                      allowfullscreen
-                    ></iframe>
-
+                  <div className="video-container col-4 p-5  d-lg-block d-none ">
+                    <YoutubeEmbed videoId="6tkWo8hDCBA?si=UnUS25ZWHW8raInw" />
                     <br />
-                    <em className=" mt-2">
+                    <em className="small mt-2">
                       PARENTAL GUIDANCE ft. Ty Logan | S1E1 | boohooMAN 2023
                     </em>
                   </div>

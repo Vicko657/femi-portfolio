@@ -12,11 +12,25 @@
 }
 
 .contact-bg img {
-  width: 80%;
+  display: block;
+  margin: 0 auto;
+  width: 75%;
+}
+footer {
+  text-transform: uppercase;
+  color: black;
+  font-weight: 700;
+  opacity: 0.8;
+}
+footer a {
+  color: black !important;
+}
+footer a:hover {
+  font-style: italic;
 }
 @media (max-width: 1200px) {
   .contact-bg img {
-    width: 60%;
+    width: 90%;
   }
 }
 @media (max-width: 600px) {
@@ -24,6 +38,6 @@
     padding: 40px;
   }
   .contact-bg img {
-    width: 100%;
+    width: 90%;
   }
 }

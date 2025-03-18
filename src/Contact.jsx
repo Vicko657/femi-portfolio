@@ -5,7 +5,7 @@ import "./Contact.css";
 export default function Contact() {
   return (
     <div className="card contact-bg h-100 rows">
-      <div className="card-body  d-flex row">
+      <div className="card-body d-flex row">
         <div className="col-lg-5 col-12 p-lg-5">
           <h2 className="mb-4">Contact Me</h2>
           <a className="pe-2" href="linkedin.com/in/femi-opedo-1633471ab">
@@ -35,6 +35,15 @@ export default function Contact() {
         <div className="d-block d-lg-none col-12">
           <img className="img-fluid" src="./imgs/femi_contact.png" />
         </div>
+        <footer className="pt-5 ps-lg-5 pt-lg-0 d-flex rows justify-content-left">
+          💻 Coded by
+          <a
+            className="ps-1"
+            href="https://vix-portfolio-project-shecodes.netlify.app/"
+          >
+            VICTORIA
+          </a>
+        </footer>
       </div>
     </div>
   );

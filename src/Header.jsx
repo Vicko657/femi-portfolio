@@ -10,24 +10,24 @@ const images = [
 
 export default function Header() {
   const [index, setIndex] = useState(0);
-  const [loaded, setLoaded] = useState(false);
+  const [loaded, setLoaded] = useState({});
 
   useEffect(() => {
-    let loadedImages = 0;
-    images.forEach((src) => {
+    let imgObjects = {};
+    images.forEach((src, i) => {
       const img = new Image();
       img.src = src;
       img.onload = () => {
-        loadedImages++;
-        if (loadedImages === images.length) {
-          setLoaded(true);
+        imgObjects[i] = true;
+        if (Object.keys(imgObjects).length === images.length) {
+          setLoaded(imgObjects);
         }
       };
     });
   }, []);
 
   useEffect(() => {
-    if (!loaded) return;
+    if (Object.keys(loaded).length !== images.length) return;
 
     const interval = setInterval(() => {
       setIndex((prevIndex) => (prevIndex + 1) % images.length);
@@ -37,12 +37,17 @@ export default function Header() {
   }, [index, loaded]);
 
   return (
-    <div
-      className="card header-bg h-100 d-flex flex-row"
-      style={{ backgroundImage: loaded ? `url(${images[index]})` : "none" }}
-    >
-      <div className="card-body d-flex flex-grow-1  flex-column ">
-        <div className="p-5 top-row d-flex rows justify-content-between">
+    <div className="card d-flex rows">
+      {images.map((src, i) => (
+        <div
+          key={i}
+          className={`bg-img ${i === index ? "active" : ""}`}
+          style={{ backgroundImage: `url(${src})` }}
+        />
+      ))}
+
+      <div className="card-body content d-flex flex-grow-1  flex-column ">
+        <div className="p-lg-5 top-row d-flex rows justify-content-between">
           <div className="pe-5">
             <h3>
               <em>Producer</em>
@@ -53,13 +58,13 @@ export default function Header() {
               <em>Content Creator </em>
             </h3>
           </div>
-          <div className="pe-5">
+          <div className="">
             <h3>
               <em>Production Manager</em>
             </h3>
           </div>
         </div>
-        <div className="title p-5 row">
+        <div className="title p-lg-5 row">
           <h1>Femi Opedo</h1>
           <p>2025 Portfolio</p>
         </div>
