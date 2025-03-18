@@ -470,7 +470,7 @@ export default function Portfolio() {
                 openAccordion === "minor" ? "show" : ""
               }`}
             >
-              <div className="accordion-body min-vh-100 d-flex rows overflow-scroll ">
+              <div className="accordion-body vh-lg-100 d-flex rows overflow-scroll ">
                 <div className="row">
                   <div className="col-lg-3 col-12 p-lg-5 pb-0 pt-3 p-5 ">
                     <p className="portfolio-role">Client</p>
@@ -567,7 +567,7 @@ export default function Portfolio() {
                 openAccordion === "worst" ? "show" : ""
               }`}
             >
-              <div className="accordion-body min-vh-100 d-flex rows overflow-scroll">
+              <div className="accordion-body vh-lg-100 d-flex rows overflow-scroll">
                 <div className="row">
                   <div className="col-lg-3 col-12 p-lg-5 pb-0 pt-3 p-5 ">
                     <p className="portfolio-role">Client</p>
