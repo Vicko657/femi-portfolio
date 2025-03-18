@@ -38,7 +38,7 @@ export default function Contact() {
           <img className="img-fluid" src="./imgs/femi_contact.png" />
         </div>
         <footer className="pt-5 ps-lg-5 pt-lg-0 d-flex rows justify-content-left">
-          💻 Designed & Coded by
+          💻 Designed & Developed by
           <a
             className="ps-1"
             href="https://vix-portfolio-project-shecodes.netlify.app/"
