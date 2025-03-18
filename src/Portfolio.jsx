@@ -50,7 +50,7 @@ export default function Portfolio() {
     <div className="portfolio-bg h-100 overflow-scroll">
       {openAccordion === null && (
         <div className=" p-5 ms-0 me-0 pb-lg-2 pb-4 row">
-          <div className="portfolio-header col-12 p-1 m-0">
+          <div className="portfolio-header col-12 p-0 m-0">
             <h2>PORTFOLIO</h2>
             <p className="portfolio-summary">
               Welcome to the world of Femi Opedo—a creative force in the media
