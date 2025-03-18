@@ -153,7 +153,7 @@ export default function Portfolio() {
                     </p>
                   </div>
 
-                  <div className="video-container col-4 p-5  d-lg-block d-none">
+                  <div className=" col-4 p-5  d-lg-block d-none">
                     <TiktokEmbed videoId="7464600504975297825" />
                   </div>
                 </div>
@@ -253,7 +253,7 @@ export default function Portfolio() {
                       the new season.
                     </p>
                   </div>
-                  <div className="video-container col-4 p-5  d-lg-block d-none">
+                  <div className="col-4 p-5  d-lg-block d-none">
                     <TiktokEmbed videoId="7463225910116896032" />
                   </div>
                 </div>
@@ -318,7 +318,10 @@ export default function Portfolio() {
                       management, and creative alignment to deliver a visually
                       engaging and high-energy experience for audiences.
                     </p>
-
+                    <img
+                      className="img-fluid mb-4 d-lg-block d-none"
+                      src="./imgs/plt_youtube.png"
+                    />
                     <p className="portfolio-text mb-4">
                       Since its launch, "The Pink Courtroom" has amassed over 66
                       million views across social platforms, proving to be a
@@ -332,10 +335,6 @@ export default function Portfolio() {
                       captivate viewers, reinforcing the brand’s influence in
                       the world of digital entertainment.
                     </p>
-                    <img
-                      className="img-fluid d-lg-block d-none"
-                      src="./imgs/plt_youtube.png"
-                    />
                   </div>
                   <div className="video-container col-4 p-5  d-lg-block d-none">
                     <YoutubeEmbed videoId="FC4klvSe-P0?si=badpqNdcSs1K9lyf" />
@@ -406,7 +405,10 @@ export default function Portfolio() {
                       overseeing crew operations, and maintaining a creative
                       environment that allowed the young panelists to shine.
                     </p>
-
+                    <img
+                      className="mt-2 mb-4 img-fluid d-lg-block d-none"
+                      src="./imgs/minor_youtube.png"
+                    />
                     <p className="portfolio-text mb-4">
                       Since its launch, "Minor Issues" has garnered significant
                       attention, with individual episodes achieving impressive
@@ -421,10 +423,6 @@ export default function Portfolio() {
                       out a unique niche in digital content, reflecting the
                       evolving landscape of audience engagement.
                     </p>
-                    <img
-                      className="mt-2 img-fluid d-lg-block d-none"
-                      src="./imgs/minor_youtube.png"
-                    />
                   </div>
                   <div className="video-container col-4 p-5  d-lg-block d-none">
                     <YoutubeEmbed videoId="kgez5GmQ-6Y?si=O9nGacvvBH3H2UoW" />
@@ -489,6 +487,11 @@ export default function Portfolio() {
                       fresh and engaging experience.
                     </p>
 
+                    <img
+                      className="img-fluid mb-4 d-lg-block d-none"
+                      src="./imgs/worst_youtube.png"
+                    />
+
                     <p className="portfolio-text mb-4">
                       My responsibilities included overseeing all aspects of
                       production, from pre-production planning to on-set
@@ -512,10 +515,6 @@ export default function Portfolio() {
                       diverse audience and contributing to Channel 4.0's
                       innovative content lineup.
                     </p>
-                    <img
-                      className="img-fluid d-lg-block d-none"
-                      src="./imgs/worst_youtube.png"
-                    />
                   </div>
                   <div className="video-container col-4 p-5  d-lg-block d-none">
                     <YoutubeEmbed videoId="nQprWww0m0U?si=R5zZY2tzdk1fmR_8" />
