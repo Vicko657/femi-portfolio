@@ -22,9 +22,7 @@ footer {
   font-weight: 700;
   opacity: 0.8;
 }
-footer a {
-  color: black !important;
-}
+
 footer a:hover {
   font-style: italic;
 }

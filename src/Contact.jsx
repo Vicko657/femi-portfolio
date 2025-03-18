@@ -26,8 +26,10 @@ export default function Contact() {
           <a href="mailto:lifeoffemi@gmail.com">
             <em>lifeoffemi@gmail.com</em>
           </a>
-
-          <p className="m-0 p-0">+44 7951 147670</p>
+          <br />
+          <a href="tel:+44 7951 147670">
+            <em>+44 7951 147670</em>
+          </a>
         </div>
         <div className="col-lg-7 d-lg-block d-none p-lg-5">
           <img className="img-fluid" src="./imgs/femi_contact.png" />

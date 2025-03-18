@@ -58,6 +58,9 @@ em {
   border: none !important;
   border-radius: 0 !important;
 }
+a {
+  color: black !important;
+}
 
 a :hover {
   font-style: normal;

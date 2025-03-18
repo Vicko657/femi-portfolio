@@ -49,7 +49,7 @@ export default function Portfolio() {
   return (
     <div className="portfolio-bg h-100 overflow-scroll">
       {openAccordion === null && (
-        <div className=" pt-5 ps-5 pb-lg-2 pb-4 row">
+        <div className=" p-5 ms-0 me-0 pb-lg-2 pb-4 row">
           <div className="portfolio-header col-12 p-1 m-0">
             <h2>PORTFOLIO</h2>
             <p className="portfolio-summary">
@@ -61,7 +61,7 @@ export default function Portfolio() {
         </div>
       )}
       <div
-        className="accordion accordion-flush d-flex row pt-0 p-2"
+        className="accordion accordion-flush d-flex row pt-0 "
         id="accordionFlushExample"
       >
         {openAccordion === null || openAccordion === "jbl" ? (

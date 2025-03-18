@@ -7,7 +7,7 @@ export default function About() {
       <div className="card-body  d-flex row">
         <div className="col-lg-5 col-12 p-lg-5">
           <h2>Who am I?</h2>
-          <p className="pb-2">
+          <p className="pb-lg-4 pb-2">
             I am an award-winning Producer and Production Manager with a proven
             track record of delivering high-profile projects. <br /> <br />
             From hit shows like Pink Courtroom to Minor Issues, I’ve worked with
@@ -32,10 +32,10 @@ export default function About() {
             <em>YouTube</em>
           </a>
         </div>
-        <div className="col-lg-7 d-lg-block d-none p-lg-5">
+        <div className="col-lg-7 d-lg-block d-none p-lg-5 ">
           <img className="img-fluid" src="./imgs/femi_about.png" />
         </div>
-        <div className="d-block d-lg-none col-12 p-5">
+        <div className="d-block d-lg-none col-12 p-4">
           <img className="img-fluid" src="./imgs/femi_about.png" />
         </div>
       </div>
