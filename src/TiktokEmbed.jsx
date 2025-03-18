@@ -3,7 +3,7 @@ import React from "react";
 export default function TiktokEmbed({ videoId }) {
   return (
     <blockquote
-      className="tiktok-embed"
+      className="tiktok-embed d-lg-block d-none"
       cite={`https://www.tiktok.com/@user/video/${videoId}`}
       data-video-id={videoId}
       style={{
