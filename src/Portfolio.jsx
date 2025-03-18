@@ -332,7 +332,10 @@ export default function Portfolio() {
                       captivate viewers, reinforcing the brand’s influence in
                       the world of digital entertainment.
                     </p>
-                    <img className="img-fluid" src="./imgs/plt_youtube.png" />
+                    <img
+                      className="img-fluid d-lg-block d-none"
+                      src="./imgs/plt_youtube.png"
+                    />
                   </div>
                   <div className="video-container col-4 p-5  d-lg-block d-none">
                     <YoutubeEmbed videoId="FC4klvSe-P0?si=badpqNdcSs1K9lyf" />
@@ -419,7 +422,7 @@ export default function Portfolio() {
                       evolving landscape of audience engagement.
                     </p>
                     <img
-                      className="mt-2 img-fluid"
+                      className="mt-2 img-fluid d-lg-block d-none"
                       src="./imgs/minor_youtube.png"
                     />
                   </div>
@@ -509,7 +512,10 @@ export default function Portfolio() {
                       diverse audience and contributing to Channel 4.0's
                       innovative content lineup.
                     </p>
-                    <img className="img-fluid" src="./imgs/worst_youtube.png" />
+                    <img
+                      className="img-fluid d-lg-block d-none"
+                      src="./imgs/worst_youtube.png"
+                    />
                   </div>
                   <div className="video-container col-4 p-5  d-lg-block d-none">
                     <YoutubeEmbed videoId="nQprWww0m0U?si=R5zZY2tzdk1fmR_8" />
