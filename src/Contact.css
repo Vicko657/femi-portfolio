@@ -35,9 +35,9 @@ footer a:hover {
 }
 @media (max-width: 600px) {
   .contact-bg {
-    padding: 40px;
+    padding: 30px;
   }
   .contact-bg img {
-    width: 90%;
+    width: 100%;
   }
 }
