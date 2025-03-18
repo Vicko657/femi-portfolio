@@ -48,12 +48,12 @@ export default function Header() {
 
       <div className="card-body content d-flex flex-grow-1  flex-column ">
         <div className="p-lg-5 top-row d-flex rows justify-content-between">
-          <div className="pe-5">
+          <div className="pe-2">
             <h3>
               <em>Producer</em>
             </h3>
           </div>
-          <div className="pe-5">
+          <div className="pe-2">
             <h3>
               <em>Content Creator </em>
             </h3>
